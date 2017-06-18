@@ -37,14 +37,34 @@ function sendViewerComment(i){
     satorichatpush(jsondata);
 }
 
+$(document).ready(function(){
+    $("p").click(function(){
+        alert("Hit sideBar");
+        
+        var request;
+        
+        request = $.ajax({            url:"https://script.google.com/macros/s/AKfycby2szvPK4qwpXsopiDVdXVKVI_qrHquu-Uw9EVp-EfDElWLXWc/exec",
+            type:"get"
+        });
+        
+        request.done(function(response, textStatus, jqXHR){
+            console.log("ajax call worked");
+            console.log(response);
+            console.log(textStatus);
+            console.log(jqXHR);
+            displayViewerComments(response);
+            
+        })
+        
+        request.fail(function(jqXHR, textStatus, errorThrown){
+            console.error("the following error occured: " + textStatus, errorThrown)
+        })
+        
+        
+    });
+});
 
-
-
-
-/*
-var body = document.getElementsByTagName('body')[0],
-    newdiv = document.createElement('div'); //Create a div
-    newdiv.id = 'newid';
-    body.appendChild(newdiv);
-    body.insertBefore(newdiv,body.firstChild)
-*/
+function displayViewerComments(response){
+    console.log("Inside displayViewerComments")
+        
+}
