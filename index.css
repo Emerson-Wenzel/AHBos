@@ -16,23 +16,25 @@ body{
     background-color: rgba(96, 96, 96, 0.5);
 
 }
-
 #commentDiv {
+    position: relative;
     float: right;
     width: 400px;
     height: 500px;
     background-color:rgba(96, 96, 96, 0.5);
 }
-
-#commentViewerForm {
-    float: right;
+#hahaha {
     position: absolute;
+    bottom: 0px;
+}
+#commentViewerForm {
+/*    float: right;
+    position: absolute;
+*/
     bottom: 300px;
     right: 50px;
 
 }
-
-
 #debates {
     float:left;
     height: 400px;
@@ -127,5 +129,8 @@ button {
     text-align: center;
 }
 #haha {
+    text-align: center;
+}
+h1, h2{
     text-align: center;
 }
