@@ -2,6 +2,7 @@ nummessages = 0;
 function addData(msg){
     var idnum = msg.messagenum;
     idnum = JSON.stringify(idnum);
+    console.log("user num is: "+msg.user);
     if(msg.user === 1)
         $("#test").append("<div class='person person-1'>"+msg.message+"<span class='tooltiptext'><p id='sideBar" + idnum + "'>Comments on <br>this Point</p><img class='link' src='goodLink.png'><p id='score'>$54.32</p></span></div><br>")
     else
@@ -34,7 +35,6 @@ function sendViewerComment(i){
 }
 
 $(document).on('click', 'p', function(){
-    alert("Hit sideBar");
     var request;
     request = $.ajax({            url:"https://script.google.com/macros/s/AKfycby2szvPK4qwpXsopiDVdXVKVI_qrHquu-Uw9EVp-EfDElWLXWc/exec",
             type:"get"
@@ -57,11 +57,6 @@ $(document).on('click', 'p', function(){
 
 function displayViewerComments(response){
     console.log("Inside displayViewerComments")
-        
-}
-
-function displayViewerComments(response){
-    console.log("Inside displayViewerComments")
     $(".viewer").remove();
     
     for (var i =0; i < response.length; i++){
@@ -72,7 +67,5 @@ function displayViewerComments(response){
         
     }
 }
-
-
 
 
