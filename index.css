@@ -17,6 +17,22 @@ body{
 
 }
 
+#commentDiv {
+    float: right;
+    width: 400px;
+    height: 500px;
+    background-color:rgba(96, 96, 96, 0.5);
+}
+
+#commentViewerForm {
+    float: right;
+    position: absolute;
+    bottom: 300px;
+    right: 50px;
+
+}
+
+
 #debates {
     float:left;
     height: 400px;
@@ -69,7 +85,7 @@ background: -moz-linear-gradient(top, white 0%, white 55%, #D5E4F3 130%);
     -moz-border-radius: 7px; 
     border-radius: 7px;
     background: -webkit-gradient(linear, left top, left bottom, 
-        color-stop(0%, white), color-stop(15%, white), color-stop(100%, #D7E9F5)); 
+        color-stop(0%, white), color-stop(15%, white), color-stop(100%, #fb7e00)); 
     background: -moz-linear-gradient(top, white 0%, white 55%, #D5E4F3 130%); 
 
 }
