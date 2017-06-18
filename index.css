@@ -1,12 +1,17 @@
 
 #test {
-    color: blue;
+    color: black;
     height: 80vh; 
-    width: 500px; 
+    width: 700px; 
     overflow-y: scroll;
-    margin-right: auto;
+    margin: auto;
 }
 
+#debates {
+    float:left;
+    height: 400px;
+    
+}
 
 #add {
     width: 100px;
@@ -14,46 +19,56 @@
     margin-left: 10%;
 }
 
-
-
-.scrollbar
-{
-	margin-left: 30px;
-	float: left;
-	height: 300px;
-	width: 65px;
-	background: #F5F5F5;
-	overflow-y: scroll;
-	margin-bottom: 25px;
-}
-.force-overflow
-{
-	min-height: 450px;
-}
-#wrapper
-{
-	text-align: center;
-	width: 500px;
-	margin: auto;
+.noLink{
+    width: 25px;
+    height: auto;
+    float:right;
+    margin-right: 75px;
 }
 
+.link {
+    width: 35px;
+    height: auto;
+    float:right;
+}
+#p1 {
+    height: auto;
+    width: 600px; 
+    padding: 20px;
+    background-color: white; 
 
-#style-2::-webkit-scrollbar-track
-{
-	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-	border-radius: 10px;
-	background-color: #F5F5F5;
+    -webkit-box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.4); 
+    -moz-box-shadow: 0px 1px 6px rgba(23, 69, 88, .5);
+    
+    -webkit-border-radius: 12px;
+-moz-border-radius: 7px; 
+border-radius: 7px;
+    
+    background: -webkit-gradient(linear, left top, left bottom, 
+color-stop(0%, white), color-stop(15%, white), color-stop(100%, #D7E9F5)); 
+background: -moz-linear-gradient(top, white 0%, white 55%, #D5E4F3 130%); 
+
 }
 
-#style-2::-webkit-scrollbar
-{
-	width: 12px;
-	background-color: #F5F5F5;
+#p2 {
+    height: auto;
+    width: 400px; 
+    padding: 20px;
+    background-color: white; 
+
+    -webkit-box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.4); 
+    -moz-box-shadow: 0px 1px 6px rgba(23, 69, 88, .5);
+    
+    -webkit-border-radius: 12px;
+-moz-border-radius: 7px; 
+border-radius: 7px;
+    
+    background: -webkit-gradient(linear, left top, left bottom, 
+color-stop(0%, white), color-stop(15%, white), color-stop(100%, #D7E9F5)); 
+background: -moz-linear-gradient(top, white 0%, white 55%, #D5E4F3 130%); 
+    width: 600px;
+    background-color: #FFFF99;
+    float: right;
 }
 
-#style-2::-webkit-scrollbar-thumb
-{
-	border-radius: 10px;
-	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
-	background-color: #D62929;
-}
+
