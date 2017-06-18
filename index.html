@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+    <link rel='shortcut icon' type='image/x-icon' href='favicon.png' />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -15,8 +16,20 @@
   </head>
   <body>
       <div id="debates">
-      
       </div>
+      <br>  
+      
+      
+        <div id="commentDiv">
+            <form id="commentViewerForm" onsubmit="sendCommentViewer();">
+                <input id="commentViewer" type="text" name="comment"/>
+                <input id="sendCommentViewer" type="submit" value="submit"/>
+            
+            </form>
+      
+      
+        </div>
+      
             <div id='test'>
           <div class='person person-1'>
             1st person talking here<br>
@@ -25,8 +38,8 @@
 
 
               <span class="tooltiptext">
-                  <p id=sideBar>Side Bar 1</p><br>
-                  <p id="score">800</p>
+                  <p id=sideBar>Comments on this Point</p><br>
+                  <p id="score">$54.32</p>
 
               </span>
               
@@ -40,32 +53,23 @@
               Second person talking here
 
             <span class="tooltiptext">
-                <p id="sideBar">Side Bar 2</p>
+                <p id="sideBar">Comments on this point</p>
                 <img class="link" src="goodLink.png">
-                <p id="score">300</p>
+                <p id="score">$22.34</p>
 
               </span>    
           </div>
-      
-      
       </div>
 
-  
-      <p>Write comment</p>
+      <br>
       <form id=commentForm onsubmit="sendComment();">
             <input id="comment" type="text" name="comment"/>
-            <input id="sendComment" type="submit" value="submit"/>
       </form>
-      <button id="submit2" onclick="sendComment()">Send Comment</button>
+      <div id=haha>
+      <button id="submit2" onclick="sendComment()">Send Message</button>
+      </div>
       
       
       <br>
-          
-
-      
-      <div id='add'>
-        <button id="addButton" onclick="addData();">Add text
-          </button>
-      </div>
   </body>
 </html>
