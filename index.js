@@ -59,10 +59,21 @@ function displayViewerComments(response){
     console.log("Inside displayViewerComments")
         
 }
-/*
-var body = document.getElementsByTagName('body')[0],
-    newdiv = document.createElement('div'); //Create a div
-    newdiv.id = 'newid';
-    body.appendChild(newdiv);
-    body.insertBefore(newdiv,body.firstChild)
-*/
+
+function displayViewerComments(response){
+    console.log("Inside displayViewerComments")
+    $("#tempComment").remove();
+    
+    for (var i =0; i < response.length; i++){
+        console.log(response[i]);
+        oneResponse = response[i];
+        $("#commentDiv").append("<p id='tempComment'>Name: " + response[i].name + "</p><p id='tempComment'>Comment: " + response[i].comment + "</p><p id='tempComment'>Points: " + response[i].score + "</p><br>");        
+        
+        
+    }
+}
+
+
+
+
+
