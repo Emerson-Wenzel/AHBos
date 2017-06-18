@@ -3,19 +3,21 @@
 
 console.log("start of index.js");
 
-function addData(){
-    $("#test").append("<p>Please Show up</p>")
-    console.log("Button worked");
-    
+function addData(msg){
+    if(msg.user === 1)
+        $("#test").append("<div class='person person-1'>"+msg.message+"<span class='tooltiptext'><p id='sideBar'>Side Bar</p><img class='link' src='goodLink.png'><p id='score'>300</p></span></div><br>")
+    else
+       $("#test").append("<div class='person person-2'>"+msg.message+"<span class='tooltiptext'><p id='sideBar'>Side Bar</p><img class='link' src='goodLink.png'><p id='score'>300</p></span></div><br>")
 }
 
 
 $(document).ready(function(){
+    satoripull();
     console.log("Test1");
 
     $("#commentForm").submit(function(event){
-        console.log("Test2");
         var comment = document.getElementById("comment").value;
+
         console.log("the comment is " + comment);
         setTimeout(test, 1000);
     });
@@ -24,21 +26,16 @@ function test(){
     console.log("test");
 }
 
-    //$("#buyForm").submit(function(event){
-
-
 function sendComment(){
-    alert("Test");
-    
-    alert($("#commentForm").serialize());
-    
-    var comment = document.getElementById("comment");
-    alert("hello");
-    alert("the comment is " + comment);
-
-    
+    var comment = document.getElementById("comment").value;
+    var jsondata = {message: comment, user: 1};
+    satoripush(jsondata);
 }
-
+function sendViewerComment(i){
+    var comment = document.getElementById("viewercomment").value;
+    var jsondata = {message: comment, debatepoint: i};
+    satorichatpush(jsondata);
+}
 
 
 
