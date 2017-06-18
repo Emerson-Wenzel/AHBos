@@ -69,6 +69,18 @@ body{
     color: lawngreen;
     font-weight: bold;
 }
+.viewer {
+        float: left;
+        -webkit-border-radius: 12px;
+-moz-border-radius: 7px; 
+border-radius: 7px;
+    
+    background: -webkit-gradient(linear, left top, left bottom, 
+color-stop(0%, white), color-stop(15%, white), color-stop(100%, blue)); 
+background: -moz-linear-gradient(top, white 0%, white 55%, #D5E4F3 130%); 
+
+}
+
 .person-1 {
     float: left;
         -webkit-border-radius: 12px;
@@ -133,4 +145,26 @@ button {
 }
 h1, h2{
     text-align: center;
+}
+
+.viewer {
+    height: auto;
+    width: 350px; 
+    margin-left:20px;
+    padding: 20px;
+    background-color: white; 
+    margin-bottom: 20px;
+    position: relative;
+    -webkit-box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.4); 
+    -moz-box-shadow: 0px 1px 6px rgba(23, 69, 88, .5);
+    
+    
+    -webkit-border-radius: 12px;
+        -moz-border-radius: 7px; 
+        border-radius: 7px;
+    
+    background: -webkit-gradient(linear, left top, left bottom, 
+color-stop(0%, white), color-stop(15%, white), color-stop(100%, #ADD8E6)); 
+background: -moz-linear-gradient(top, white 0%, white 55%, #D5E4F3 130%); 
+
 }
