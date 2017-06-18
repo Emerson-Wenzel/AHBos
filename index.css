@@ -5,6 +5,8 @@
     width: 700px; 
     overflow-y: scroll;
     margin: auto;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 #debates {
@@ -23,7 +25,6 @@
     width: 25px;
     height: auto;
     float:right;
-    margin-right: 75px;
 }
 
 .link {
@@ -31,44 +32,72 @@
     height: auto;
     float:right;
 }
-#p1 {
+
+#sideBar {
+    float:left;
+}
+#score {
+    float:left;
+    padding-left: 15px;
+    color: lawngreen;
+    font-weight: bold;
+}
+.person-1 {
+    float: left;
+        -webkit-border-radius: 12px;
+-moz-border-radius: 7px; 
+border-radius: 7px;
+    
+    background: -webkit-gradient(linear, left top, left bottom, 
+color-stop(0%, white), color-stop(15%, white), color-stop(100%, lawngreen)); 
+background: -moz-linear-gradient(top, white 0%, white 55%, #D5E4F3 130%); 
+
+}
+
+.person-2 {
+    float:right;
+        -webkit-border-radius: 12px;
+-moz-border-radius: 7px; 
+border-radius: 7px;
+    
+    background: -webkit-gradient(linear, left top, left bottom, 
+color-stop(0%, white), color-stop(15%, white), color-stop(100%, #D7E9F5)); 
+background: -moz-linear-gradient(top, white 0%, white 55%, #D5E4F3 130%); 
+
+}
+.person {
     height: auto;
     width: 600px; 
     padding: 20px;
     background-color: white; 
+    margin-bottom: 20px;
 
     -webkit-box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.4); 
     -moz-box-shadow: 0px 1px 6px rgba(23, 69, 88, .5);
     
-    -webkit-border-radius: 12px;
--moz-border-radius: 7px; 
-border-radius: 7px;
-    
-    background: -webkit-gradient(linear, left top, left bottom, 
-color-stop(0%, white), color-stop(15%, white), color-stop(100%, #D7E9F5)); 
-background: -moz-linear-gradient(top, white 0%, white 55%, #D5E4F3 130%); 
 
 }
 
-#p2 {
-    height: auto;
-    width: 400px; 
-    padding: 20px;
-    background-color: white; 
 
-    -webkit-box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.4); 
-    -moz-box-shadow: 0px 1px 6px rgba(23, 69, 88, .5);
-    
-    -webkit-border-radius: 12px;
--moz-border-radius: 7px; 
-border-radius: 7px;
-    
-    background: -webkit-gradient(linear, left top, left bottom, 
-color-stop(0%, white), color-stop(15%, white), color-stop(100%, #D7E9F5)); 
-background: -moz-linear-gradient(top, white 0%, white 55%, #D5E4F3 130%); 
-    width: 600px;
-    background-color: #FFFF99;
-    float: right;
+.person .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: grey;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+ 
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    margin-left: 20%;
+    margin-right: 10%;
+    z-index: 1;
 }
 
+
+
+.person:hover .tooltiptext {
+    visibility: visible;
+}
 
