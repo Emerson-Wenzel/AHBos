@@ -1,9 +1,9 @@
 //global variables
 endpoint = "wss://open-data.api.satori.com";
-appkey = "4c375e6532B427FB16f210bAeB825C09";
-role = "islam";
-roleSecretKey = "bA4feaEb64E28CC69DDFD7aB8a9badC8";
-channel = "islam";
+appkey = "89A9EF0DC955ca63dce7aAF0C4dEf8fC";
+role = "angelhackbos";
+roleSecretKey = "b0F727FBFfbd8EAf92B6CBd5AEBd2CDF";
+channel = "angelhackbos";
 
 chatrole = "chatdata";
 chatroleSecretKey = "Fc5eb65fa13117725fAb5dD593138AE6";
