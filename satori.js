@@ -8,6 +8,7 @@ channel = "islam";
 chatrole = "chatdata";
 chatroleSecretKey = "Fc5eb65fa13117725fAb5dD593138AE6";
 chatchannel ="chatdata";
+nummessages = 0;
 
 function satoripull(){
 
@@ -20,11 +21,13 @@ var subscription = rtm.subscribe(channel, RTM.SubscriptionMode.SIMPLE, {history:
 
 subscription.on('rtm/subscription/data', function (pdu) {
   pdu.body.messages.forEach(function (msg) {
+      nummessages++;
       addData(msg);
     console.log('Got message:', msg);
   });
 });
-  rtm.start();    
+    rtm.start(); 
+    return nummessages;
 }
 
 function satoripush(message){
