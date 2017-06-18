@@ -62,17 +62,16 @@ function displayViewerComments(response){
 
 function displayViewerComments(response){
     console.log("Inside displayViewerComments")
-    $("#tempComment").remove();
+    $(".viewer").remove();
     
     for (var i =0; i < response.length; i++){
         console.log(response[i]);
         oneResponse = response[i];
-        $("#commentDiv").append("<p id='tempComment'>Name: " + response[i].name + "</p><p id='tempComment'>Comment: " + response[i].comment + "</p><p id='tempComment'>Points: " + response[i].score + "</p><br>");        
+        $("#commentDiv").append("<div class='viewer'><p id='tempCommentName'> <strong>" + response[i].name + "</strong>:\n" + response[i].comment + "</p><p id='tempCommentLikes'>Likes: " + response[i].score + "</p></div");        
         
         
     }
 }
-
 
 
 
